@@ -1,0 +1,20 @@
+The builder pattern
+
+Designed to solve problems with creating objects whose constructors include the 
+supply of a large number of parameters. This solves:
+1. errors in mixing up the order of parameters
+2. The need to supply null value to parameters that are optional.
+3. Complexity in the creation of heavy objects.
+
+Implementation
+--------------------------------------------------------------------------------
+Create a static inner class and copy all arguments to this (Builder) class.The convention
+is that the name of the class is the name of the target class with a 'Builder' suffix.
+The builder class will have a public constructor with all the required attributes 
+as parameters
+The Builder class will have methods to set the optional parameters and will return 
+the same Builder object after setting the optinal parameters
+The Builder class will have a build method that returns the object needed by the 
+client. The client program will have a private constructor with the builder class as 
+the argument.
+

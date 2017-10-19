@@ -1,0 +1,26 @@
+Adapter Pattern
+Usefull in making indipendently designed class libraries work together.
+It converts the interface of a class into another interface the clients expect i.e 
+it lets classes work together that otherwise would not by wrapping an existing 
+class with a new interface. Implementation of this design pattern is done through
+inheritance or aggregation. The adapter functions as a wrapper or modifier to 
+an existing class. It provides a different or transalted view of that class
+
+Checklist
+--------------------------------------------------------------------------------
+
+1. Identify the players: the component(s) that want to be accommodated 
+   (i.e. the client), and the component that needs to adapt (i.e. the adaptee).
+2. Identify the interface that the client requires.
+3. Design a "wrapper" class that can "impedance match" the adaptee to the client.
+4. The adapter/wrapper class "has a" instance of the adaptee class.
+5. The adapter/wrapper class "maps" the client interface to the adaptee interface.
+6. The client uses (is coupled to) the new interface
+
+Example:
+Suppose you have a Bird class with fly() , and makeSound()methods. And also a ToyDuck 
+class with squeak() method. Let’s assume that you are short on ToyDuck objects 
+and you would like to use Bird objects in their place. Birds have some similar 
+functionality but implement a different interface, so we can’t use them directly.
+So we will use adapter pattern. Here our client would be ToyDuck and adaptee 
+would be Bird.

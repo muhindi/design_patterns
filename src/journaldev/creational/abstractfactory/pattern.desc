@@ -1,0 +1,15 @@
+The AbstractFactory Pattern
+(A factory of factories)
+Similar to the Factory design pattern but instead of the if-else to determine the class to instatiate,
+the pattern has, for each sub-class, a factory class that implements a method in an abstract factory class
+that contains a method definition returning the super-class instance, the sub-class factory method will return
+a its specific implementation instance of the method.
+
+How:
+a) A Super class and its subclasess (Computer-->PC & Server)
+b) An abstract factory (interface of abstract class) to return instance of the super class.
+c) For  each subclass, a Factory class that implements the abstract factory and returns the
+   specific instantiation subclass.
+
+
+

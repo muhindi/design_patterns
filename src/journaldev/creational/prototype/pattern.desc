@@ -1,0 +1,13 @@
+Prototype Pattern:
+A creational design pattern that provides a mechanism for object creation
+Useful in situations where the cost of creating an object is high (time & resources)
+and a similar object exists. It provides for the copying of the original 
+object to a new object by making use of cloning capabilities.
+
+Implementation
+--------------------------------------------------------------------------------
+In the class that fetches a collection of items in a resource intensive way e.g
+from a database, override the clone method and in its implementation, make a copy 
+of the collection to an instance of the same class. Return this instance containing
+the collection of data
+
