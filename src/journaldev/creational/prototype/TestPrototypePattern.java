@@ -33,6 +33,7 @@ public class TestPrototypePattern {
         for (Employee emp : institution.getEmployeeDirectory()) {
             System.out.println(emp);
         }
+
         System.out.println("---------------------------------------------------");
         System.out.println("Employees in Instution 2: "+institution2.getEmployeeDirectory().size());
         System.out.println("---------------------------------------------------");

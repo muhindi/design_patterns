@@ -1,0 +1,8 @@
+Structural Design Patterns
+Prescribe the organization of classes and objects. The patterns are concerned with how classes inherit
+from each other or are composed from other classes.
+Adapter, Proxy and Decorator: Introduce indirection between client class and class it wants to use.
+Adapter: Uses indirection to modify the interface of a class to make it easier for a client class to use it.
+Decorator: Uses indirection to add behavior to a class, without affecting the client class
+Proxy: Uses indirection to transparently provide a stand-in for another class.
+

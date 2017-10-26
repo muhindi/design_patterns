@@ -4,7 +4,7 @@ It converts the interface of a class into another interface the clients expect i
 it lets classes work together that otherwise would not by wrapping an existing 
 class with a new interface. Implementation of this design pattern is done through
 inheritance or aggregation. The adapter functions as a wrapper or modifier to 
-an existing class. It provides a different or transalted view of that class
+an existing class. It provides a different or translated view of that class
 
 Checklist
 --------------------------------------------------------------------------------
