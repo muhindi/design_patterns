@@ -6,3 +6,5 @@ Adapter: Uses indirection to modify the interface of a class to make it easier f
 Decorator: Uses indirection to add behavior to a class, without affecting the client class
 Proxy: Uses indirection to transparently provide a stand-in for another class.
 
+Composite: Used when you want to represent a part-whole hierarchy
+

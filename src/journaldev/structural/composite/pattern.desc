@@ -1,0 +1,17 @@
+Composite Pattern
+The pattern describes a group of objects that are to be treated in the same way as a single instance of
+an object.
+Should be used when clients should ignore ethe difference between compositions and individual
+objects.
+Used in scenarios that require part-whole hierarchies. The objects are to be treated in the
+same way. it should be used when a group of objects should behave as one and/or when
+creating a tree-like structure.
+
+The pattern has the following objects:
+-------------------------------------------------------------------------------------------------
+1.  Base Component: The interface for all objects in the system, the client program will use
+    this interface to interact with the objects in the composition. Can be an interface or abstract
+    class.
+2.  Leaf: Represents the behavior of the objects in the composition and implements the base
+    component, Does not have references to other objects.
+3.  Composite: Consists of leaf elements and implements the operations in the base components.
